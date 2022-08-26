@@ -14,29 +14,8 @@ a{
 
 .header{
     background-color: var(--primary);
-    position: relative;
 }
-.header::before{
-    content: '';
-    position: absolute;
-    background-image: url('images/left-bottom.png');
-    left: -144px;
-    bottom: 0;
-    display: block;
-    width: 524px;
-    height: 307px;
-}
-.header::after{
-    content: '';
-    position: absolute;
-    background-image: url('images/hero-right.png');
-    right: -20px;
-    top: 15%;
-    display: block;
-    width: 750px;
-    height: 500px;
 
-}
 .right-nav{
     list-style: none;
 }
@@ -59,6 +38,30 @@ a{
     height: 100%;
     z-index: 1
 }
+.hero{
+    position: relative;
+}
+.hero::before{
+    content: '';
+    position: absolute;
+    background-image: url('images/left-bottom.png');
+    left: -144px;
+    bottom: 0;
+    display: block;
+    width: 524px;
+    height: 307px;
+}
+.hero::after{
+    content: '';
+    position: absolute;
+    background-image: url('images/hero-right.png');
+    right: 0px;
+    top: 15%;
+    display: block;
+    width: 730px;
+    height: 500px;
+
+}
 .hero .heading{
     font-size: 2em;
 }
@@ -68,4 +71,43 @@ a{
 .hero .content{
     padding-top: 6em;
     width: 80%;
+}
+.search-field{
+    width: 530px;
+    height: 70px;
+    border-radius: 15px;
+    font-size: 24px;
+}
+.search-field:focus{
+    outline: none;
+}
+.search{
+    position: relative;
+}
+.search-icon{
+    position: absolute;
+    top: 5px;
+    right: -16px;
+    border: none;
+}
+
+
+
+
+.categories{
+    padding: 7em 0px;
+}
+
+.cards{
+    width: 70%;
+}
+
+.card-icon{
+    width: 227px;
+    height: 206px;
+    border-radius: 15px;
+}
+.card-icon.active{
+    background-color: #19472C;
+    color: white;
 }
