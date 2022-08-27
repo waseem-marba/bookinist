@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .nav-bar{
+            background-color: burlywood;
+            width: 100ww;
+        }
+        .container{
+            width: 80vw;
+            margin: 0 auto;
+        }
+        .logo{
+            float: left;
+        }
+        .navigation{
+            float: right;
+            list-style: none;
+        }
+        .navigation .nav-item{
+            display: inline-block;
+            margin-left: 15px;
+        }
+        .container::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="container">
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+
+        <ul class="navigation">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+</body>
+</html>

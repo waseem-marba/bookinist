@@ -23,7 +23,7 @@ a{
     flex-grow: unset;
 }
 .right-nav a{
-    padding: 10px 10px;
+    padding: 10px 20px 10px 0px;
 }
 .login-btn{
     width: 140px;
@@ -36,7 +36,6 @@ a{
 .stereo-image{
     width: 100%;
     height: 100%;
-    z-index: 1
 }
 .hero{
     position: relative;
@@ -73,7 +72,7 @@ a{
     width: 80%;
 }
 .search-field{
-    width: 530px;
+    width: 100%;
     height: 70px;
     border-radius: 15px;
     font-size: 24px;
@@ -87,7 +86,7 @@ a{
 .search-icon{
     position: absolute;
     top: 5px;
-    right: -16px;
+    right: 5px;
     border: none;
 }
 
