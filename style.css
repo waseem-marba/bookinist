@@ -70,7 +70,7 @@ a{
 }
 .hero .content{
     padding-top: 6em;
-    width: 80%;
+    width: 100%;
 }
 .search-field{
     width: 100%;
@@ -83,6 +83,7 @@ a{
 }
 .search{
     position: relative;
+    width: 80%;
 }
 .search-icon{
     position: absolute;
@@ -116,8 +117,54 @@ a{
     background-color: #19472C;
     color: white;
 }
+.books-section{
+    padding: 7em 0px;
+}
 .book-card{
     width: 270px;
     padding: 20px;
     text-align: center;
+    background-color: white;
+    border-radius: 2em;
+    margin: auto;
+}
+.image-wrapper{
+    position: relative;
+    width: 220px;
+    margin: auto;
+}
+.book-icon{
+    position: absolute;
+}
+
+.author-section{
+    padding: 7em 0px;
+    background-color: #F2E9DA;
+}
+.author-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author-image{
+    width: 120px;
+    position: relative;
+}
+.author-image img{
+    width: 100%;
+    object-fit: cover;
+}
+.author-image::after{
+    content: "";
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    background-image: url('images/path.png');
+    top: 50%;
+    margin-top: -25px;
+}
+.carousel-item img{
+    width: 100%;
+    object-fit: cover;
 }

@@ -63,12 +63,12 @@
       
       <section class="hero">
         <div class="container">
-        <div class="row">
-          <div class="col-md-5 col-sm-12">
+        <div class="row gx-3">
+          <div class="col-md-6 col-sm-12">
             <div class="content text-center">
             <p class="heading">Keep reading improve<br>your knowledge</p>
             <p class="body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos sit aperiam quaerat, placeat neque id.</p>
-            <form class="search">
+            <form class="search m-auto">
               <input type="search" class="search-field"/>
               <button type="submit" class="search-icon">
                 <i class=""></i>
@@ -78,7 +78,7 @@
           </div>
           </div>
 
-          <div class="col-md-6 offset-md-1">
+          <div class="col-md-6">
             <img src="images/stereo.png" class="stereo-image" alt="">
           </div>
         </div>
@@ -144,44 +144,96 @@
 
           <div class="row g-0">
             <div class="col m-0 p-0">
-              <div class="book-card">
-                  <img src="images/magic.png" alt="">
+              <div class="book-card shadow">
+                <div class="image-wrapper">
+                  <img style="width: 100%;" src="images/magic.png" alt="">
+                  <!-- <img class="book-icon" src="images/book-icon.png" alt=""> -->
+                </div>
                   <h5>Big Magic</h5>
                   <p>Graham Bill</p>
               </div>
             </div>
             <div class="col">
-              <div class="book-card">
+              <div class="book-card shadow">
                   <img src="images/pics.png" alt="">
                   <h5>The Picts</h5>
                   <p>Graham Bill</p>
               </div>
             </div>
             <div class="col">
-              <div class="book-card">
+              <div class="book-card shadow">
                   <img src="images/authority.png" alt="">
                   <h5>authority</h5>
                   <p>Graham Bill</p>
               </div>
             </div>
             <div class="col">
-              <div class="book-card">
+              <div class="book-card shadow">
                   <img src="images/questions.png" alt="">
                   <h5>Questions</h5>
                   <p>Graham Bill</p>
               </div>
             </div>
             <div class="col">
-              <div class="book-card">
+              <div class="book-card shadow">
                   <img src="images/magic.png" alt="">
                   <h5>Big Magic</h5>
                   <p>Graham Bill</p>
               </div>
             </div>
           </div>
-
        </div>
     </section>
+
+    <section class="author-section">
+      <div class="container">
+       <div class="row">
+        <div class="col-md-4 m-auto">
+          <div class="authors">
+            <div class="author-heading">
+               <div class="author-image">
+                <img src="images/author.png" alt="">
+               </div>
+               <div class="author-details">
+                <p>Popular Authors</p>
+                <h5>Tammi Sauer</h5>
+                <img src="images/stars.png" alt="">
+                <span>4.0 / 5.0</span>
+               </div>
+            </div>
+          </div>
+          <div class="author-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus esse, perferendis adipisci doloribus quo vel minima maiores labore alias! Nostrum!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, et optio quae consequatur itaque vitae!</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/m1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/m2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/m3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+       </div>
+      </div>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
