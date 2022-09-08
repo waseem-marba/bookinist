@@ -13,47 +13,55 @@
             margin: 0;
             box-sizing: border-box;
         }
-        .nav-bar{
-            background-color: burlywood;
-            width: 100ww;
+        .profile-img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
         }
-        .container{
-            width: 80vw;
-            margin: 0 auto;
+        .profile-img img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
-        .navigation{
-            list-style: none;
-            padding: 0;
-            margin: 0;
+        .profile{
+            position: relative;
         }
-        .nav-item > a{
-            padding: 20px;
+        .profile-detail{
+            position: absolute;
+            border-radius: 5px;
+            top: 120%;
+            width: 250px;
+            left: -100px;
         }
-        .nav-item > a:hover{
-            background-color: red;
+        .profile-detail::before{
+            content: "";
+            width: 10px;
+            height: 10px;
+            rotate: 45deg;
+            background-color: white;
+            display: block;
+            position:absolute;
+            top: -5px;
+            left: 48%;
+            border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
         }
     </style>
 </head>
-<body>
-    <nav class="nav-bar">
-        <div class="container d-flex justify-content-between align-items-center">
-        <div class="logo">
-            <img src="images/logo.png" alt="">
+<body class="d-flex justify-content-center">
+    <div class="profile">
+        <div class="profile-header">
+            <div class="profile-img">
+                <img src="images/profile.jpg" class="rounded-circle" alt="">
+            </div>
         </div>
-
-        <ul class="navigation d-flex">
-            <li class="nav-item">
-                <a href="#" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">About Us</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Contact Us</a>
-            </li>
-        </ul>
+        <div class="profile-detail border shadow">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-user-vneck"></i> <a href="#">Jhon Doe</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    </nav>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

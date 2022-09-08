@@ -14,6 +14,7 @@ a{
 
 .header{
     background-color: var(--primary);
+    border-bottom-right-radius: 10em;
 }
 
 .right-nav{
@@ -102,11 +103,21 @@ a{
 }
 
 .card-icon{
-    width: 227px;
-    height: 206px;
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+}
+.card-icon h5{
+    margin-top: 5px;
 }
 .card-icon.active{
     background-color: #19472C;
     color: white;
+}
+.book-card{
+    width: 270px;
+    padding: 20px;
+    text-align: center;
 }
