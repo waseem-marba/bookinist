@@ -120,8 +120,17 @@ a{
 .books-section{
     padding: 7em 0px;
 }
+.book-col{
+    max-width: 18% !important;
+}
+@media only screen and (max-device-width: 768px) {
+    .book-col{
+        width: 100% !important;
+       max-width: 100% !important;
+   }
+}
 .book-card{
-    width: 270px;
+    width: 100%;
     padding: 20px;
     text-align: center;
     background-color: white;
@@ -130,8 +139,12 @@ a{
 }
 .image-wrapper{
     position: relative;
-    width: 220px;
+    width: 100%;
     margin: auto;
+}
+.image-wrapper img{
+    width: 100%;
+    object-fit: cover;
 }
 .book-icon{
     position: absolute;
@@ -143,13 +156,15 @@ a{
 }
 .author-heading{
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .author-image{
-    width: 120px;
+    /* flex: 1; */
     position: relative;
+}
+.author-details{
+    /* flex: 2; */
 }
 .author-image img{
     width: 100%;
@@ -163,8 +178,4 @@ a{
     background-image: url('images/path.png');
     top: 50%;
     margin-top: -25px;
-}
-.carousel-item img{
-    width: 100%;
-    object-fit: cover;
 }
